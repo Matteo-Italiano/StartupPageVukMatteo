@@ -59,18 +59,27 @@ hr {
     border-radius: 10px;
     background-color: #333333;
     padding: 15px;
+    position: relative;
 }
 
 .tool-item img {
     width: 100px;
     height: 100px;
     margin-bottom: 15px;
-    transition: transform 0.3s, filter 0.3s;
+    transition: transform 0.3s, top 0.3s, left 0.3s, width 0.3s, height 0.3s;
     filter: grayscale(50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.tool-item img:hover {
-    transform: scale(1.1);
+.tool-item:hover img {
+    top: 10px;
+    left: 10px;
+    transform: translate(0, 0);
+    width: 60px;
+    height: 60px;
     filter: grayscale(0%);
 }
 
@@ -78,6 +87,13 @@ hr {
     font-size: 14px;
     color: #cccccc;
     line-height: 1.5;
+    margin-top: 130px;
+    transition: opacity 0.3s;
+    opacity: 0;
+}
+
+.tool-item:hover p {
+    opacity: 1;
 }
 
 .circles-section {
