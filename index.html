@@ -5,131 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WorkingStyle & 3ap Starter</title>
-    <link rel="stylesheet" href="/styles.css" />
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            color: #333;
-            margin: 0;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .header {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .header h1 {
-            font-size: 36px;
-            margin: 0;
-        }
-        .circles-section {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 10px;
-            width: 100%;
-            max-width: 1200px;
-        }
-        .circles-section img {
-            max-width: 150px;
-            height: auto;
-            margin-right: 20px;
-        }
-        .circles-text {
-            font-size: 16px;
-            color: #555;
-        }
-        .video-link {
-            text-align: left;
-            margin-top: 10px;
-            font-size: 16px;
-        }
-        .values {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 20px;
-            width: 100%;
-            max-width: 1200px;
-        }
-        .values .row {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-        .values .row.two-boxes {
-            flex-wrap: wrap;
-        }
-        .value-box {
-            background-color: #fff;
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            flex: 1;
-            min-width: 250px;
-        }
-        .value-box h3 {
-            margin-top: 0;
-            font-size: 18px;
-        }
-        .tools {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 40px;
-        }
-        .tools img {
-            margin: 10px 0;
-        }
-        .tools p {
-            max-width: 600px;
-            text-align: center;
-            font-size: 14px;
-            color: #555;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
     <div class="header">
-        <label id="startingLabel" for="#Starterpage">
-            <img width="300px" src="/Logos/3ap.svg" alt="3ap" />
-            <h1 id="Starterpage">Starterpage</h1>
-        </label>
+        <div class="title-container">
+            <img class="logo" src="/Logos/3ap.svg" alt="3ap Logo" />
+            <h1 class="starterpage-title">Starterpage</h1>
+        </div>
     </div>
     <hr />
-    <em><h2>The tools we use</h2></em>
-    <div name="tools-we-use-list" class="tools">
-        <img width="150px" src="/Logos/Slack.png" alt="Slack Logo" />
-        <p>I'm baby kale chips humblebrag butcher drinking vinegar selvage hell of yuccie vexillologist master cleanse...</p>
-
-        <img width="150px" src="/Logos/Harvest.png" alt="Harvest Logo" />
-        <p>I'm baby kale chips humblebrag butcher drinking vinegar selvage hell of yuccie vexillologist master cleanse...</p>
-
-        <img width="150px" src="/Logos/3ap.svg" alt="3ap-admin Logo" />
-        <p>I'm baby kale chips humblebrag butcher drinking vinegar selvage hell of yuccie vexillologist master cleanse...</p>
-
-        <img width="150px" src="/Logos/BambooHR_short.png" alt="BambooHR Logo" />
-        <p>I'm baby kale chips humblebrag butcher drinking vinegar selvage hell of yuccie vexillologist master cleanse...</p>
-
-        <img width="150px" src="/Logos/confluence.png" alt="Confluence Logo" />
-        <p>I'm baby kale chips humblebrag butcher drinking vinegar selvage hell of yuccie vexillologist master cleanse...</p>
-
-        <img width="150px" src="/Logos/github.png" alt="Github Logo" />
-        <p>I'm baby kale chips humblebrag butcher drinking vinegar selvage hell of yuccie vexillologist master cleanse...</p>
-
-        <img width="150px" src="/Logos/Gmail.png" alt="Google-Mail Logo" />
-        <p>I'm baby kale chips humblebrag butcher drinking vinegar selvage hell of yuccie vexillologist master cleanse...</p>
-
-        <img width="150px" src="/Logos/google-meet-icon-2020-.svg" alt="Google-Meet Logo" />
-        <p>I'm baby kale chips humblebrag butcher drinking vinegar selvage hell of yuccie vexillologist master cleanse...</p>
-
-        <img width="150px" src="/Logos/Google_Calendar.png" alt="Google-Calendar Logo" />
-        <p>I'm baby kale chips humblebrag butcher drinking vinegar selvage hell of yuccie vexillologist master cleanse...</p>
+    <em><h2 class="tools-title">The tools we use</h2></em>
+    <div class="tools">
+        <div class="tool-item">
+            <img src="/Logos/Slack.png" alt="Slack Logo" />
+            <p>I'm baby kale chips humblebrag butcher drinking vinegar selvage hell of yuccie vexillologist master cleanse...</p>
+        </div>
+        <div class="tool-item">
+            <img src="/Logos/Harvest.png" alt="Harvest Logo" />
+            <p>I'm baby kale chips humblebrag butcher drinking vinegar selvage hell of yuccie vexillologist master cleanse...</p>
+        </div>
+        <div class="tool-item">
+            <img src="/Logos/3ap.svg" alt="3ap-admin Logo" />
+            <p>I'm baby kale chips humblebrag butcher drinking vinegar selvage hell of yuccie vexillologist master cleanse...</p>
+        </div>
+        <div class="tool-item">
+            <img src="/Logos/BambooHR_short.png" alt="BambooHR Logo" />
+            <p>I'm baby kale chips humblebrag butcher drinking vinegar selvage hell of yuccie vexillologist master cleanse...</p>
+        </div>
+        <div class="tool-item">
+            <img src="/Logos/confluence.png" alt="Confluence Logo" />
+            <p>I'm baby kale chips humblebrag butcher drinking vinegar selvage hell of yuccie vexillologist master cleanse...</p>
+        </div>
+        <div class="tool-item">
+            <img src="/Logos/github.png" alt="Github Logo" />
+            <p>I'm baby kale chips humblebrag butcher drinking vinegar selvage hell of yuccie vexillologist master cleanse...</p>
+        </div>
+        <div class="tool-item">
+            <img src="/Logos/Gmail.png" alt="Google-Mail Logo" />
+            <p>I'm baby kale chips humblebrag butcher drinking vinegar selvage hell of yuccie vexillologist master cleanse...</p>
+        </div>
+        <div class="tool-item">
+            <img src="/Logos/google-meet-icon-2020-.svg" alt="Google-Meet Logo" />
+            <p>I'm baby kale chips humblebrag butcher drinking vinegar selvage hell of yuccie vexillologist master cleanse...</p>
+        </div>
+        <div class="tool-item">
+            <img src="/Logos/Google_Calendar.png" alt="Google-Calendar Logo" />
+            <p>I'm baby kale chips humblebrag butcher drinking vinegar selvage hell of yuccie vexillologist master cleanse...</p>
+        </div>
     </div>
+    <hr />
     <div class="circles-section">
-        <img src="Circles.webp" alt="Kreise">
+        <img class="circles-logo" src="Circles.webp" alt="Kreise">
         <div class="circles-text">
             <h2>Circles</h2>
             <p>Die Methode der Kreise basiert auf der Idee, dass jedes Mitglied eines Teams einen gleichwertigen Beitrag zum Gesamtergebnis leisten kann. Kreise repräsentieren Zusammenarbeit und den gemeinsamen Fluss von Ideen. In Meetings oder Gruppeninteraktionen ermöglicht die Kreismethode eine offene und respektvolle Kommunikation, bei der alle Stimmen gehört werden. Entscheidungen werden gemeinsam getroffen, indem man sich gegenseitig zuhört und die besten Lösungen im Kollektiv findet, anstatt eine hierarchische Struktur zu bevorzugen. Diese Methode fördert Gleichheit, Einbeziehung und den ständigen Austausch von Wissen und Perspektiven.</p>
@@ -138,6 +65,7 @@
             </div>
         </div>
     </div>
+    <hr />
     <h2>Values</h2>
     <div class="values">
         <div class="value-box">
