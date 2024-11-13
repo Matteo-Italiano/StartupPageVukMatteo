@@ -55,14 +55,17 @@ hr {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    border-radius: 10px;
+    background-color: #333333;
 }
 
 .tool-item img {
     width: 100px;
     height: 100px;
-    margin-bottom: 15px;
+    margin: 15px 0px 15px 0px;
     transition: transform 0.3s, filter 0.3s;
     filter: grayscale(50%);
+    
 }
 
 .tool-item img:hover {
