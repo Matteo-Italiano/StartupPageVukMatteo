@@ -141,3 +141,51 @@ hr {
     font-size: 18px;
     color: #ffffff;
 }
+
+#general-information{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 100px 0px 100px;
+    background-color: #444;
+    border-radius: 8px;
+}
+
+#general-information > p{
+    margin: 0px 50px 0px;
+}
+
+#Serbia, #Switzerland, #eaptimes, #eapdays {
+    background-color: #555555;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#Serbia, #Switzerland {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#eapcontainer, #countrycontainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+#eaptimes, #eapdays, #Serbia, #Switzerland {
+    flex: 1; 
+    background-color: #555555;
+    border-radius: 10px;
+    margin: 10px;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+#countrycontainer  p{
+    
+}
+
+
