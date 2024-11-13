@@ -31,6 +31,7 @@ body {
     font-weight: bold;
     color: #ffffff;
 }
+
 hr {
     border: none;
     border-top: 1px solid #444;
@@ -57,19 +58,28 @@ hr {
     text-align: center;
     border-radius: 10px;
     background-color: #333333;
+    padding: 15px;
+    position: relative;
 }
 
 .tool-item img {
     width: 100px;
     height: 100px;
-    margin: 15px 0px 15px 0px;
-    transition: transform 0.3s, filter 0.3s;
+    margin-bottom: 15px;
+    transition: transform 0.3s, top 0.3s, left 0.3s, width 0.3s, height 0.3s;
     filter: grayscale(50%);
-    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.tool-item img:hover {
-    transform: scale(1.1);
+.tool-item:hover img {
+    top: 10px;
+    left: 10px;
+    transform: translate(0, 0);
+    width: 60px;
+    height: 60px;
     filter: grayscale(0%);
 }
 
@@ -77,6 +87,13 @@ hr {
     font-size: 14px;
     color: #cccccc;
     line-height: 1.5;
+    margin-top: 130px;
+    transition: opacity 0.3s;
+    opacity: 0;
+}
+
+.tool-item:hover p {
+    opacity: 1;
 }
 
 .circles-section {
@@ -92,7 +109,6 @@ hr {
     max-width: 150px;
     height: auto;
     margin-right: 20px;
-    align-self: center;
 }
 
 .circles-text {
