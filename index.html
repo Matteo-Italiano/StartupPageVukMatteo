@@ -2,10 +2,119 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/styles.css">
-    <title>Hello World</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorkingStyle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+        .circles-section {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .circles-section img {
+            max-width: 150px;
+            height: auto;
+            margin-right: 20px;
+        }
+        .circles-text {
+            font-size: 16px;
+            color: #555;
+        }
+        .video-link {
+            text-align: left;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        .values {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .values .row {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .values .row.two-boxes {
+            flex-wrap: wrap;
+        }
+        .value-box {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            min-width: 250px;
+        }
+        .value-box h3 {
+            margin-top: 0;
+            font-size: 18px;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="header">
+        <h1>WorkingStyle</h1>
+    </div>
+    <div class="circles-section">
+        <img src="Circles.webp" alt="Kreise">
+        <div class="circles-text">
+            <h2>Circles</h2>
+            <p>Die Methode der Kreise basiert auf der Idee, dass jedes Mitglied eines Teams einen gleichwertigen Beitrag zum Gesamtergebnis leisten kann. Kreise repräsentieren Zusammenarbeit und den gemeinsamen Fluss von Ideen. In Meetings oder Gruppeninteraktionen ermöglicht die Kreismethode eine offene und respektvolle Kommunikation, bei der alle Stimmen gehört werden. Entscheidungen werden gemeinsam getroffen, indem man sich gegenseitig zuhört und die besten Lösungen im Kollektiv findet, anstatt eine hierarchische Struktur zu bevorzugen. Diese Methode fördert Gleichheit, Einbeziehung und den ständigen Austausch von Wissen und Perspektiven.</p>
+            <div class="video-link">
+                <p>Schau dir das Video hier an: <a href="https://www.youtube.com/watch?v=Ypn_-8BHm3I" target="_blank">Watch the video</a></p>
+            </div>
+        </div>
+    </div>
+    <h2>Values</h2>
+    <div class="values">
+        <div class="value-box">
+            <h3>FIND BEAUTY IN SIMPLICITY</h3>
+            <p>In a world of complexity, we believe that less is more. We understand and meet the needs of our customers and employees, but allow pragmatism to prevail. We keep things as simple as possible, and only as complicated as necessary. The search for efficiency is the most important driving force for us.</p>
+        </div>
+        <div class="row two-boxes">
+            <div class="value-box">
+                <h3>BE THE CHANGE</h3>
+                <p>Whatever we do, we do it right. We are aware of our roles and responsibilities and take them seriously. When we are convinced that something is the right thing to do, we are courageous to take a risk and stand by our decision. With our hands-on mentality, we turn big ideas into great solutions. Every day.</p>
+            </div>
+            <div class="value-box">
+                <h3>CELEBRATE HONESTY</h3>
+                <p>Diversity is one of our most valuable assets. We are interested in all kinds of people and their personal opinions. We value openness, authenticity, and constructive feedback with and from everyone, regardless of their job title. We firmly believe that honest communication is the prerequisite for trust and the basis for improvement.</p>
+            </div>
+        </div>
+        <div class="row two-boxes">
+            <div class="value-box">
+                <h3>GROW PROFESSIONALLY AND PERSONALLY</h3>
+                <p>We are hungry. We don’t want to stay in the comfort zone for too long, we are constantly on the move. We learn from our projects and mistakes, from each other and from our clients. We encourage and challenge each other. We strive to constantly develop as specialists, contractors, employees, and also as people.</p>
+            </div>
+            <div class="value-box">
+                <h3>ENJOY THE TEAM</h3>
+                <p>Together we are the strongest. We believe in the power of what we have in common and in the magic of our differences. We combine the best of many worlds in our teams. We value what each individual brings to the table and translate it into solutions that delight our customers. We live our passion every day, working hard to reach our goals and celebrating even harder when we achieve them.</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
