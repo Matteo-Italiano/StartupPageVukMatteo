@@ -66,7 +66,6 @@ hr {
     width: 100px;
     height: 100px;
     margin-bottom: 15px;
-    transition: transform 0.3s, top 0.3s, left 0.3s, width 0.3s, height 0.3s;
     filter: grayscale(50%);
     position: absolute;
     top: 50%;
@@ -75,11 +74,6 @@ hr {
 }
 
 .tool-item:hover img {
-    top: 10px;
-    left: 10px;
-    transform: translate(0, 0);
-    width: 60px;
-    height: 60px;
     filter: grayscale(0%);
 }
 
