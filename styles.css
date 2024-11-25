@@ -114,6 +114,7 @@ a[href="index.html"] img {
 a[href="index.html"] img:hover {
     transform: scale(1.2);
 }
+
 .tools {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -122,6 +123,39 @@ a[href="index.html"] img:hover {
     max-width: 1200px;
     margin: 40px auto;
 }
+
+.tools {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 20px;
+}
+
+.tool-item {
+    border-radius: 10px; 
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s; 
+}
+
+.tool-item img {
+    max-width: 100px; 
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.tool-item:hover {
+    transform: scale(1.05); 
+}
+
+@media (max-width: 1140px) {
+    .tools {
+        grid-template-columns: 1fr; 
+    }
+}
+
 
 .tool-item {
     display: flex;
