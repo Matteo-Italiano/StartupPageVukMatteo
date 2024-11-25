@@ -663,3 +663,9 @@ a[href="index.html"] img:hover {
     color: #cccccc;
     line-height: 1.5;
 }
+
+#Tutorial{
+    text-decoration: none;
+    color: white;
+    width: 500px;
+}
