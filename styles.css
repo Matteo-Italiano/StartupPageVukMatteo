@@ -82,7 +82,7 @@ a{
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.navbar .Blue > a {
+.navbar .blue > a {
     color: #ffffff;
     background-color: #0044cc;
 }
@@ -587,7 +587,7 @@ a{
     }
 }
 
-#Office-container {
+#office-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -692,7 +692,7 @@ a{
     line-height: 1.5;
 }
 
-#eapcontainer {
+#eap-container {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
@@ -744,7 +744,7 @@ a{
     line-height: 1.5;
 }
 
-#Tutorial{
+#tutorial{
     text-decoration: none;
     color: white;
     width: 500px;
