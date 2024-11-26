@@ -9,6 +9,10 @@ body {
     align-items: center;
     position: relative;
 }
+
+a{
+    text-decoration: none;
+}
 .header {
     width: 100%;
     background-color: #1e1e1e;
@@ -76,7 +80,7 @@ body {
     background-color: #0044cc;
 }
 
-a[href="index.html"] {
+.href-on-index{
     display: flex; 
     align-items: center; 
     justify-content: center; 
@@ -86,19 +90,19 @@ a[href="index.html"] {
     transition: background-color 0.3s, transform 0.3s;
 }
 
-a[href="index.html"]:hover {
+.herf-on-index:hover{
     background-color: rgba(255, 255, 255, 0.2);
     transform: scale(1.1);
 }
 
-a[href="index.html"] img {
+/* a[href="index.html"] img */ .home-button{
     width: 30px; 
     height: 30px;
     border-radius: 50%;
     transition: transform 0.3s;
 }
 
-a[href="index.html"]:hover img {
+/* a[href="index.html"]:hover img */ .home-button {
     transform: scale(1.2);
 }
 
@@ -720,8 +724,4 @@ a[href="index.html"]:hover img {
     color: white;
     width: 500px;
     font-size: 50px;
-}
-
-.Blue{
-    
 }
