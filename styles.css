@@ -70,7 +70,7 @@ body {
     background-color: #333333;
 }
 
-.navbar a.active {
+.navbar .Blue > a {
     color: #ffffff;
     background-color: #0056b3;
 }
@@ -732,4 +732,8 @@ a[href="index.html"] img:hover {
     color: white;
     width: 500px;
     font-size: 50px;
+}
+
+.Blue{
+    
 }
