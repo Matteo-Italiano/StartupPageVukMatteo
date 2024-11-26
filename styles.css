@@ -42,15 +42,16 @@ body {
 
 .navbar {
     width: 100%;
-    background-color: #1e1e1e;
+    background-color: #2b2b2b;
     display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    padding: 10px 20px;
+    justify-content: center;
+    align-items: center; 
+    padding: 15px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    gap: 15px;
 }
 
 .navbar a {
@@ -58,62 +59,49 @@ body {
     font-size: 16px;
     font-weight: 500;
     text-transform: uppercase;
-    margin: 0 15px;
+    margin: 0 10px;
     color: #e0e0e0;
     transition: color 0.3s, background-color 0.3s;
-    padding: 8px 15px;
+    padding: 5px 10px;
     border-radius: 5px;
 }
 
 .navbar a:hover {
-    color: #ffffff;
-    background-color: #333333;
+    color: #757575;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .navbar a.active {
     color: #ffffff;
-    background-color: #0056b3;
+    background-color: #0044cc;
 }
 
-.navbar img {
+a[href="index.html"] {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
     width: 35px; 
-    height: 35px;
-    object-fit: cover;
-    border-radius: 50%; 
-    margin-left: 15px;
-    transition: transform 0.3s, box-shadow 0.3s;
-    cursor: pointer;
+    height: 35px; 
+    background-color: transparent; 
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-.navbar img:hover {
+a[href="index.html"]:hover {
+    background-color: rgba(255, 255, 255, 0.2);
     transform: scale(1.1);
-    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
-}
-
-.navbar-links {
-    display: flex;
-    align-items: center;
-    gap: 20px; 
-}
-
-.navbar-logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
 }
 
 a[href="index.html"] img {
-    width: 40px;
-    height: 40px;
-    top: 15px;
-    right: 20px;
-    cursor: pointer;
+    width: 30px; 
+    height: 30px;
+    border-radius: 50%;
     transition: transform 0.3s;
 }
 
-a[href="index.html"] img:hover {
+a[href="index.html"]:hover img {
     transform: scale(1.2);
 }
+
 
 .tools {
     display: grid;
