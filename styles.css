@@ -256,7 +256,7 @@ a{
     position: relative;
 }
 
-.hero {
+.text-style {
     flex: 1;
     padding: 20px;
     text-align: center;
@@ -266,7 +266,7 @@ a{
     margin: 10px;
 }
 
-.hero img {
+.text-style img {
     width: 100px;
     height: auto;
     margin: 20px 0;
@@ -275,18 +275,18 @@ a{
     filter: grayscale(40%);
 }
 
-.hero img:hover {
+.text-style img:hover {
     filter: grayscale(0%);
 
 }
 
-.hero p {
+.text-style p {
     font-size: 18px;
     line-height: 1.5;
     color: #cccccc;
 }
 
-.heron {
+.picture-style {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -294,7 +294,7 @@ a{
     margin-top: 30px;
 }
 
-.heron img {
+.picture-style img {
     max-width: 1000px;
     height: auto;
     border-radius: 10px;
@@ -302,7 +302,7 @@ a{
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.heron img:hover {
+.picture-style img:hover {
     transform: scale(1.05);
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.7);
 }
